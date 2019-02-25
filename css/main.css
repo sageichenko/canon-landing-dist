@@ -665,15 +665,55 @@ body {
     margin-top: 7.5rem;
   }
 }
+.wrap {
+  height: 100%;
+  background: url('../img/snow.png') bottom repeat-x;
+  padding: 2rem 0 0;
+}
 .section-heading {
   background: radial-gradient(at top, #e71c1a, #b90200);
   text-align: center;
   overflow: hidden;
-  padding: 2rem 0 0;
   position: relative;
 }
 .section-heading .img-box {
   margin-top: -3rem;
+}
+.section-heading .snowflake_1,
+.section-heading .snowflake_2,
+.section-heading .snowflake_3 {
+  position: absolute;
+}
+@media only screen and (max-width: 767px) {
+  .section-heading .snowflake_1,
+  .section-heading .snowflake_2,
+  .section-heading .snowflake_3 {
+    display: none;
+  }
+}
+.section-heading .snowflake_1 {
+  top: 18rem;
+  left: -12rem;
+}
+.section-heading .snowflake_2 {
+  top: -8rem;
+  left: 35rem;
+}
+.section-heading .snowflake_3 {
+  top: 7rem;
+  right: -13rem;
+}
+.section-heading .snowflake-composition_1,
+.section-heading .snowflake-composition_2 {
+  position: absolute;
+}
+.section-heading .snowflake-composition_1 {
+  top: 4rem;
+  left: 1rem;
+}
+.section-heading .snowflake-composition_2 {
+  bottom: 5rem;
+  right: 7rem;
 }
 @media only screen and (min-width: 768px) {
   .section-heading__bread-crumbs {
@@ -693,18 +733,20 @@ body {
 .section-heading__heading-box {
   position: relative;
   bottom: 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 17rem;
 }
 @media only screen and (min-width: 768px) {
   .section-heading__heading-box {
     position: static;
-    margin-bottom: 6rem;
   }
 }
 .section-heading__heading,
 .section-heading__heading-sub {
   width: 30rem;
-  margin: 0 auto;
+  margin: 1rem auto 0;
+}
+.section-heading__heading-sub {
+  line-height: 3rem;
 }
 .section-heading .img-snow {
   margin-bottom: -1rem;
@@ -730,7 +772,7 @@ body {
 }
 .section-promo .promo {
   position: relative;
-  top: -12rem;
+  top: -13rem;
 }
 .footer-wrap {
   margin: 0 2rem;
@@ -877,7 +919,6 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .search {
-    margin-right: 0;
     margin-top: -1.5rem;
   }
 }
