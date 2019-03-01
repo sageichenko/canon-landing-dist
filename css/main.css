@@ -593,6 +593,11 @@ body {
   list-style: none;
   padding: 3rem 0;
 }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav {
+    background: url('../img/composition1.png') no-repeat left, url('../img/composition2.png') no-repeat right, url('../img/snowflake2.png') no-repeat -10rem -5rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .nav {
     padding: 0;
